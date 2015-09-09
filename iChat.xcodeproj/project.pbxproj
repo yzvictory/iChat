@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BDC50D21BA01B6F00A3A750 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BDC50D11BA01B6F00A3A750 /* Images.xcassets */; };
+		3BDC50EE1BA0232500A3A750 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC50EC1BA0232500A3A750 /* AppDelegate.m */; };
+		3BDC50EF1BA0232500A3A750 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC50ED1BA0232500A3A750 /* main.m */; };
+		3BDC50FE1BA0233500A3A750 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC50F31BA0233500A3A750 /* ViewController.m */; };
+		3BDC50FF1BA0233500A3A750 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BDC50F71BA0233500A3A750 /* LaunchScreen.xib */; };
+		3BDC51001BA0233500A3A750 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BDC50F91BA0233500A3A750 /* Main.storyboard */; };
+		3BDC51011BA0233500A3A750 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BDC50FB1BA0233500A3A750 /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3BDC50C11BA01B6F00A3A750 /* iChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BDC50D11BA01B6F00A3A750 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3BDC50EB1BA0232500A3A750 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3BDC50EC1BA0232500A3A750 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3BDC50ED1BA0232500A3A750 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3BDC50F21BA0233500A3A750 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3BDC50F31BA0233500A3A750 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3BDC50F81BA0233500A3A750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3BDC50FA1BA0233500A3A750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3BDC50FB1BA0233500A3A750 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Rsource/Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BDC50BE1BA01B6F00A3A750 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BDC50B81BA01B6F00A3A750 = {
+			isa = PBXGroup;
+			children = (
+				3BDC50C31BA01B6F00A3A750 /* iChat */,
+				3BDC50C21BA01B6F00A3A750 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3BDC50C21BA01B6F00A3A750 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC50C11BA01B6F00A3A750 /* iChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BDC50C31BA01B6F00A3A750 /* iChat */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC51021BA0254B00A3A750 /* Doc */,
+				3BDC50F01BA0233500A3A750 /* Catefories */,
+				3BDC50F11BA0233500A3A750 /* Controller */,
+				3BDC50F41BA0233500A3A750 /* Database */,
+				3BDC50F51BA0233500A3A750 /* Model */,
+				3BDC50F61BA0233500A3A750 /* Rsource */,
+				3BDC50FC1BA0233500A3A750 /* Utils */,
+				3BDC50FD1BA0233500A3A750 /* View */,
+				3BDC50EA1BA0232500A3A750 /* Application */,
+				3BDC50D11BA01B6F00A3A750 /* Images.xcassets */,
+				3BDC50C41BA01B6F00A3A750 /* Supporting Files */,
+			);
+			path = iChat;
+			sourceTree = "<group>";
+		};
+		3BDC50C41BA01B6F00A3A750 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC50FB1BA0233500A3A750 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BDC50EA1BA0232500A3A750 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC50EB1BA0232500A3A750 /* AppDelegate.h */,
+				3BDC50EC1BA0232500A3A750 /* AppDelegate.m */,
+				3BDC50ED1BA0232500A3A750 /* main.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3BDC50F01BA0233500A3A750 /* Catefories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Catefories;
+			sourceTree = "<group>";
+		};
+		3BDC50F11BA0233500A3A750 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC50F21BA0233500A3A750 /* ViewController.h */,
+				3BDC50F31BA0233500A3A750 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3BDC50F41BA0233500A3A750 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		3BDC50F51BA0233500A3A750 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3BDC50F61BA0233500A3A750 /* Rsource */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC50F71BA0233500A3A750 /* LaunchScreen.xib */,
+				3BDC50F91BA0233500A3A750 /* Main.storyboard */,
+			);
+			path = Rsource;
+			sourceTree = "<group>";
+		};
+		3BDC50FC1BA0233500A3A750 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3BDC50FD1BA0233500A3A750 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BDC51021BA0254B00A3A750 /* Doc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Doc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BDC50C01BA01B6F00A3A750 /* iChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BDC50E41BA01B7000A3A750 /* Build configuration list for PBXNativeTarget "iChat" */;
+			buildPhases = (
+				3BDC50BD1BA01B6F00A3A750 /* Sources */,
+				3BDC50BE1BA01B6F00A3A750 /* Frameworks */,
+				3BDC50BF1BA01B6F00A3A750 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iChat;
+			productName = iChat;
+			productReference = 3BDC50C11BA01B6F00A3A750 /* iChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BDC50B91BA01B6F00A3A750 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = DeviceOne;
+				TargetAttributes = {
+					3BDC50C01BA01B6F00A3A750 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 3BDC50BC1BA01B6F00A3A750 /* Build configuration list for PBXProject "iChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BDC50B81BA01B6F00A3A750;
+			productRefGroup = 3BDC50C21BA01B6F00A3A750 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BDC50C01BA01B6F00A3A750 /* iChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BDC50BF1BA01B6F00A3A750 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BDC51011BA0233500A3A750 /* Info.plist in Resources */,
+				3BDC51001BA0233500A3A750 /* Main.storyboard in Resources */,
+				3BDC50FF1BA0233500A3A750 /* LaunchScreen.xib in Resources */,
+				3BDC50D21BA01B6F00A3A750 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BDC50BD1BA01B6F00A3A750 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BDC50FE1BA0233500A3A750 /* ViewController.m in Sources */,
+				3BDC50EF1BA0232500A3A750 /* main.m in Sources */,
+				3BDC50EE1BA0232500A3A750 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3BDC50F71BA0233500A3A750 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BDC50F81BA0233500A3A750 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		3BDC50F91BA0233500A3A750 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BDC50FA1BA0233500A3A750 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3BDC50E21BA01B7000A3A750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3BDC50E31BA01B7000A3A750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BDC50E51BA01B7000A3A750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				INFOPLIST_FILE = /Users/yz/localCode/iChat/iChat/Rsource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "857c213d-2476-4b6d-b18a-27bd89d372c8";
+			};
+			name = Debug;
+		};
+		3BDC50E61BA01B7000A3A750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				INFOPLIST_FILE = /Users/yz/localCode/iChat/iChat/Rsource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "857c213d-2476-4b6d-b18a-27bd89d372c8";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BDC50BC1BA01B6F00A3A750 /* Build configuration list for PBXProject "iChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BDC50E21BA01B7000A3A750 /* Debug */,
+				3BDC50E31BA01B7000A3A750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BDC50E41BA01B7000A3A750 /* Build configuration list for PBXNativeTarget "iChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BDC50E51BA01B7000A3A750 /* Debug */,
+				3BDC50E61BA01B7000A3A750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BDC50B91BA01B6F00A3A750 /* Project object */;
+}
