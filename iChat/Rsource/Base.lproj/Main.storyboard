@@ -24,23 +24,22 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnBackClick:" destination="hdU-Ic-5lb" eventType="touchUpInside" id="cY9-CK-1v0"/>
+                                    <action selector="btnBackClick:" destination="hdU-Ic-5lb" eventType="touchUpInside" id="QrN-mJ-fcy"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q2e-4s-6mH">
                                 <rect key="frame" x="67" y="108" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKR-Tq-oJr">
-                                <rect key="frame" x="271" y="347" width="46" height="30"/>
+                                <rect key="frame" x="164" y="259" width="46" height="30"/>
                                 <state key="normal" title="发送">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnSendClick:" destination="hdU-Ic-5lb" eventType="touchUpInside" id="8lD-c9-Fl6"/>
+                                    <action selector="btnSendClick:" destination="hdU-Ic-5lb" eventType="touchUpInside" id="GIb-qV-0e9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -48,7 +47,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="textFiled" destination="q2e-4s-6mH" id="a9X-9c-0R5"/>
+                        <outlet property="textFiled" destination="q2e-4s-6mH" id="hcy-Vu-QUj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LRx-3x-gpe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -77,7 +76,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnAclick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YRH-5c-GtK"/>
                                     <segue destination="hdU-Ic-5lb" kind="show" id="43b-Hd-PBe"/>
                                 </connections>
                             </button>
@@ -91,7 +89,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnBclick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tD6-1l-6tq"/>
                                     <segue destination="nqF-gy-cGe" kind="show" id="cKm-4y-4Y1"/>
                                 </connections>
                             </button>
@@ -128,23 +125,22 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnBackClick:" destination="nqF-gy-cGe" eventType="touchUpInside" id="74n-xg-BsI"/>
+                                    <action selector="btnBackClick:" destination="nqF-gy-cGe" eventType="touchUpInside" id="Qc1-Qs-kPu"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8BS-t6-21w">
                                 <rect key="frame" x="82" y="98" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15C-vd-vYP">
-                                <rect key="frame" x="286" y="337" width="46" height="30"/>
+                                <rect key="frame" x="179" y="254" width="46" height="30"/>
                                 <state key="normal" title="发送">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnSendClick:" destination="nqF-gy-cGe" eventType="touchUpInside" id="6mL-Bc-iMo"/>
+                                    <action selector="btnSendClick:" destination="nqF-gy-cGe" eventType="touchUpInside" id="P0l-ia-peM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -152,7 +148,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="textFiled" destination="8BS-t6-21w" id="Sgu-kh-kBH"/>
+                        <outlet property="textFiled" destination="8BS-t6-21w" id="D9Q-36-C4s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TTY-5g-zTi" userLabel="First Responder" sceneMemberID="firstResponder"/>

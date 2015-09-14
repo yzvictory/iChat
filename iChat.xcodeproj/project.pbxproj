@@ -7,25 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3BCD95291BA512B000244120 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCD95281BA512B000244120 /* LoginViewController.m */; };
-		3BCD952E1BA5197100244120 /* UserAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCD952D1BA5197100244120 /* UserAViewController.m */; };
-		3BCD95311BA5198C00244120 /* UserBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCD95301BA5198C00244120 /* UserBViewController.m */; };
 		3BDC50D21BA01B6F00A3A750 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BDC50D11BA01B6F00A3A750 /* Images.xcassets */; };
 		3BDC50EE1BA0232500A3A750 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC50EC1BA0232500A3A750 /* AppDelegate.m */; };
 		3BDC50EF1BA0232500A3A750 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC50ED1BA0232500A3A750 /* main.m */; };
 		3BDC50FF1BA0233500A3A750 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BDC50F71BA0233500A3A750 /* LaunchScreen.xib */; };
 		3BDC51001BA0233500A3A750 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BDC50F91BA0233500A3A750 /* Main.storyboard */; };
 		3BDC51011BA0233500A3A750 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BDC50FB1BA0233500A3A750 /* Info.plist */; };
+		3BEF8BCF1BA51DEE00447FE6 /* UserAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF8BCE1BA51DEE00447FE6 /* UserAViewController.m */; };
+		3BEF8BD21BA51DFE00447FE6 /* UserBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF8BD11BA51DFE00447FE6 /* UserBViewController.m */; };
+		3BEF8BD51BA5354500447FE6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF8BD41BA5354500447FE6 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3BCD95271BA512B000244120 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../../../../../Documents/LoginViewController.h; sourceTree = "<group>"; };
-		3BCD95281BA512B000244120 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../../../../../Documents/LoginViewController.m; sourceTree = "<group>"; };
 		3BCD952B1BA5172600244120 /* DefineService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineService.h; sourceTree = "<group>"; };
-		3BCD952C1BA5197100244120 /* UserAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserAViewController.h; path = ../../../../../Documents/UserAViewController.h; sourceTree = "<group>"; };
-		3BCD952D1BA5197100244120 /* UserAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserAViewController.m; path = ../../../../../Documents/UserAViewController.m; sourceTree = "<group>"; };
-		3BCD952F1BA5198C00244120 /* UserBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserBViewController.h; path = ../../../../../Documents/UserBViewController.h; sourceTree = "<group>"; };
-		3BCD95301BA5198C00244120 /* UserBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserBViewController.m; path = ../../../../../Documents/UserBViewController.m; sourceTree = "<group>"; };
 		3BDC50C11BA01B6F00A3A750 /* iChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BDC50D11BA01B6F00A3A750 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3BDC50EB1BA0232500A3A750 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -34,6 +28,12 @@
 		3BDC50F81BA0233500A3A750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3BDC50FA1BA0233500A3A750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3BDC50FB1BA0233500A3A750 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Rsource/Info.plist; sourceTree = "<group>"; };
+		3BEF8BCD1BA51DEE00447FE6 /* UserAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAViewController.h; sourceTree = "<group>"; };
+		3BEF8BCE1BA51DEE00447FE6 /* UserAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAViewController.m; sourceTree = "<group>"; };
+		3BEF8BD01BA51DFE00447FE6 /* UserBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserBViewController.h; sourceTree = "<group>"; };
+		3BEF8BD11BA51DFE00447FE6 /* UserBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserBViewController.m; sourceTree = "<group>"; };
+		3BEF8BD31BA5354500447FE6 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		3BEF8BD41BA5354500447FE6 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,10 +74,10 @@
 		3BDC50C31BA01B6F00A3A750 /* iChat */ = {
 			isa = PBXGroup;
 			children = (
+				3BEF8BCC1BA51DD100447FE6 /* Controllers */,
 				3BCD952A1BA5168700244120 /* Macro */,
 				3BDC51021BA0254B00A3A750 /* Doc */,
 				3BDC50F01BA0233500A3A750 /* Catefories */,
-				3BDC50F11BA0233500A3A750 /* Controller */,
 				3BDC50F41BA0233500A3A750 /* Database */,
 				3BDC50F51BA0233500A3A750 /* Model */,
 				3BDC50F61BA0233500A3A750 /* Rsource */,
@@ -113,19 +113,6 @@
 			children = (
 			);
 			path = Catefories;
-			sourceTree = "<group>";
-		};
-		3BDC50F11BA0233500A3A750 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				3BCD95271BA512B000244120 /* LoginViewController.h */,
-				3BCD95281BA512B000244120 /* LoginViewController.m */,
-				3BCD952C1BA5197100244120 /* UserAViewController.h */,
-				3BCD952D1BA5197100244120 /* UserAViewController.m */,
-				3BCD952F1BA5198C00244120 /* UserBViewController.h */,
-				3BCD95301BA5198C00244120 /* UserBViewController.m */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		3BDC50F41BA0233500A3A750 /* Database */ = {
@@ -170,6 +157,19 @@
 			children = (
 			);
 			path = Doc;
+			sourceTree = "<group>";
+		};
+		3BEF8BCC1BA51DD100447FE6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3BEF8BCD1BA51DEE00447FE6 /* UserAViewController.h */,
+				3BEF8BCE1BA51DEE00447FE6 /* UserAViewController.m */,
+				3BEF8BD01BA51DFE00447FE6 /* UserBViewController.h */,
+				3BEF8BD11BA51DFE00447FE6 /* UserBViewController.m */,
+				3BEF8BD31BA5354500447FE6 /* LoginViewController.h */,
+				3BEF8BD41BA5354500447FE6 /* LoginViewController.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,11 +243,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BEF8BD21BA51DFE00447FE6 /* UserBViewController.m in Sources */,
 				3BDC50EF1BA0232500A3A750 /* main.m in Sources */,
-				3BCD95311BA5198C00244120 /* UserBViewController.m in Sources */,
+				3BEF8BCF1BA51DEE00447FE6 /* UserAViewController.m in Sources */,
 				3BDC50EE1BA0232500A3A750 /* AppDelegate.m in Sources */,
-				3BCD95291BA512B000244120 /* LoginViewController.m in Sources */,
-				3BCD952E1BA5197100244120 /* UserAViewController.m in Sources */,
+				3BEF8BD51BA5354500447FE6 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

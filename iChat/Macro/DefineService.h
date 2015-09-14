@@ -11,5 +11,7 @@
 
 #define kServiceUUID @"B58EC483-1F3B-4386-9994-7656F7CD16F7" //服务uuid
 #define kCharacterUUID @"7D1EF0CE-3162-4495-94D0-D3137837B60F" //特征uuid
+#define kEndFlag @"**&**"
+#define kNOTIFY_MTU 20
 
 #endif
