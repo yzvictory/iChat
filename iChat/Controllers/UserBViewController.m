@@ -46,14 +46,13 @@
 }
 
 - (IBAction)btnBackClick:(UIButton *)sender {
+    
 }
 
 - (IBAction)btnSendClick:(UIButton *)sender {
-    
     self.dataToSend = [self.textFiled.text dataUsingEncoding:NSUTF8StringEncoding];
     self.sendDataIndex = 0;
     [self sendData];
-//    [self.peripheralManager updateValue:[kEndFlag dataUsingEncoding:NSUTF8StringEncoding] forCharacteristic:self.updateCharacteristic onSubscribedCentrals:nil];
 }
 - (void)addService
 {
@@ -70,6 +69,7 @@
         case CBPeripheralManagerStatePoweredOn:
         {
             [self addService];
+            
         }
             break;
             
@@ -77,9 +77,11 @@
             break;
     }
 }
-- (void)peripheralManager:(CBPeripheralManager *)peripheral didAddService:(CBService *)service error:(NSError *)error
+ -(void)peripheralManager:(CBPeripheralManager *)peripheral didAddService:(CBService *)service error:(NSError *)error
 {
-    [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:kServiceUUID]] }];
+    if (!error) {
+        [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:kServiceUUID]] }];
+    }
 }
 
 -(void)peripheralManager:(CBPeripheralManager *)peripheral central:(CBCentral *)central didSubscribeToCharacteristic:(CBCharacteristic *)characteristic
@@ -95,56 +97,27 @@
 }
 - (void)sendData
 {
-    // First up, check if we're meant to be sending an EOM
     static BOOL sendingEOM = NO;
     
     if (sendingEOM) {
         
-        // send it
         BOOL didSend = [self.peripheralManager updateValue:[kEndFlag dataUsingEncoding:NSUTF8StringEncoding] forCharacteristic:self.updateCharacteristic onSubscribedCentrals:nil];
-        
-        // Did it send?
         if (didSend) {
-            
-            // It did, so mark it as sent
             sendingEOM = NO;
         }
-        
-        // It didn't send, so we'll exit and wait for peripheralManagerIsReadyToUpdateSubscribers to call sendData again
         return;
     }
-    
-    // We're not sending an EOM, so we're sending data
-    
-    // Is there any left to send?
-    
     if (self.sendDataIndex >= self.dataToSend.length) {
-        
-        // No data left.  Do nothing
         return;
     }
-    
-    // There's data left, so send until the callback fails, or we're done.
-    
     BOOL didSend = YES;
     
     while (didSend) {
-        
-        // Make the next chunk
-        
-        // Work out how big it should be
         NSInteger amountToSend = self.dataToSend.length - self.sendDataIndex;
-        
-        // Can't be longer than 20 bytes
         if (amountToSend > kNOTIFY_MTU) amountToSend = kNOTIFY_MTU;
-        
-        // Copy out the data we want
         NSData *chunk = [NSData dataWithBytes:self.dataToSend.bytes+self.sendDataIndex length:amountToSend];
         
-        // Send it
         didSend = [self.peripheralManager updateValue:chunk forCharacteristic:self.updateCharacteristic onSubscribedCentrals:nil];
-        
-        // If it didn't work, drop out and wait for the callback
         if (!didSend) {
             return;
         }
@@ -152,22 +125,15 @@
         NSString *stringFromData = [[NSString alloc] initWithData:chunk encoding:NSUTF8StringEncoding];
         NSLog(@"Sent: %@", stringFromData);
         
-        // It did send, so update our index
         self.sendDataIndex += amountToSend;
         
-        // Was it the last one?
         if (self.sendDataIndex >= self.dataToSend.length) {
             
-            // It was - send an EOM
-            
-            // Set this so if the send fails, we'll send it next time
             sendingEOM = YES;
             
-            // Send it
             BOOL eomSent = [self.peripheralManager updateValue:[kEndFlag dataUsingEncoding:NSUTF8StringEncoding] forCharacteristic:self.updateCharacteristic onSubscribedCentrals:nil];
             
             if (eomSent) {
-                // It sent, we're all done
                 sendingEOM = NO;
             }
             

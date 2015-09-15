@@ -36,9 +36,11 @@
     [super viewDidDisappear:animated];
 }
 - (IBAction)btnBackClick:(UIButton *)sender {
+    
 }
 
 - (IBAction)btnSendClick:(UIButton *)sender {
+    
 }
 - (void)viewTap:(UITapGestureRecognizer *)recognizer
 {
@@ -87,7 +89,7 @@
 - (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral
 {
     NSLog(@"连接设备成功");
-//    [self.centralManager stopScan];
+    [self.centralManager stopScan];
     [self.data setLength:0];
     peripheral.delegate = self;
     [peripheral discoverServices:@[[CBUUID UUIDWithString:kServiceUUID]]];
@@ -123,7 +125,8 @@
 //某个特征值被跟新后的回调
 - (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error
 {
-    if (error) {
+    if (error)
+    {
         NSLog(@"%@",[error localizedDescription]);
     }
     NSString *stringWithData = [[NSString alloc]initWithData:characteristic.value encoding:NSUTF8StringEncoding];
@@ -132,8 +135,8 @@
     if ([stringWithData isEqualToString:kEndFlag]) {
         [self.textFiled setText:[[NSString alloc]initWithData:self.data encoding:NSUTF8StringEncoding]];
         
-        [peripheral setNotifyValue:NO forCharacteristic:characteristic];
-        [self.centralManager cancelPeripheralConnection:peripheral];
+//        [peripheral setNotifyValue:NO forCharacteristic:characteristic];
+//        [self.centralManager cancelPeripheralConnection:peripheral];
     }
     else
     {
